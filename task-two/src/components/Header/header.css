@@ -1,0 +1,390 @@
+.header {
+    height: 73px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__first {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo-first {
+    fill: none;
+    width: 35px;
+    height: 24px;
+}
+
+.logo-second {
+    fill: none;
+    margin-left: 9px;
+    height: 14px;
+    width: 95px;
+}
+
+.header__main {
+    width: 500px;
+    margin-left: 24px;
+    justify-content: space-between;
+    margin-right: auto;
+    display: flex;
+}
+
+.header__contacts {
+    width: 300px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.header__btn {
+    margin-left: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.header__number {
+    margin-right: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+}
+
+.header__tg {
+    cursor: pointer;
+    width: 16px;
+    height: 14px;
+}
+
+.header__viber {
+    cursor: pointer;
+    fill: none;
+    width: 16px;
+    height: 15px;
+}
+
+.header__whatsapp {
+    cursor: pointer;
+    fill: none;
+    width: 16px;
+    height: 16px;
+}
+
+.header__second {
+    width: 165px;
+    height: fit-content;
+}
+
+.second__about {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* Медия запросы для Хедера */
+@media (max-width: 700px) {
+    .header {
+        z-index: 1;
+        height: 55px;
+        background-color: #0E1014;
+    }
+
+    .serf {
+        display: none;
+    }
+
+    .logo-first {
+        display: none;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+    .header__main {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .header__btn {
+        margin-left: 0;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+    }
+
+    .logo-second {
+        display: none;
+    }
+    
+    .header__second {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .logo-first {
+        width: 25px;
+        height: 14px;
+    }
+
+    .logo-second {
+        height: 10px;
+        width: 80px;
+        margin-left: 0;
+    }
+
+    .second__about {
+        font-size: 8px;
+        width: 120px;
+    }
+
+    .header__main {
+        margin-left: 10px;
+        justify-content: flex-start;
+    }
+
+    .header__btn {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+
+    .header__number {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+
+    .header__tg {
+        width: 11px;
+        height: 9px;
+    }
+
+    .header__viber {
+        width: 11px;
+        height: 10px;
+    }
+
+    .header__whatsapp {
+        width: 11px;
+        height: 11px;
+    }
+
+    .header__contacts {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .logo-first {
+        width: 30px;
+        height: 19px;
+    }
+
+    .logo-second {
+        height: 13px;
+        width: 90px;
+    }
+
+    .second__about {
+        font-size: 10px;
+    }
+
+    .header__main {
+        margin-left: 15px;
+        justify-content: flex-start;
+    }
+
+    .header__btn {
+        margin-left: 25px;
+        font-size: 14px;
+    }
+
+    .header__number {
+        font-size: 14px;
+    }
+
+    .header__tg {
+        width: 16px;
+        height: 14px;
+    }
+
+    .header__viber {
+        width: 16px;
+        height: 15px;
+    }
+
+    .header__whatsapp {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header__contacts {
+        width: 220px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .header__contacts {
+        width: 250px;
+    }
+
+    .header__main {
+        justify-content: flex-start;
+    }
+
+    .header__btn {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .logo-first {
+        width: 45px;
+        height: 34px;
+    }
+
+    .logo-second {
+        height: 24px;
+        width: 105px;
+    }
+
+    .second__about {
+        font-size: 12px;
+    }
+
+    .header__btn {
+        margin-left: 45px;
+        font-size: 18px;
+    }
+
+    .header__number {
+        font-size: 18px;
+    }
+
+    .header__tg {
+        width: 21px;
+        height: 19px;
+    }
+
+    .header__viber {
+        width: 21px;
+        height: 20px;
+    }
+
+    .header__whatsapp {
+        width: 21px;
+        height: 21px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .logo-first {
+        width: 55px;
+        height: 44px;
+    }
+
+    .logo-second {
+        height: 34px;
+        width: 115px;
+    }
+
+    .second__about {
+        line-height: normal;
+        width: 225px;
+        font-size: 16px;
+    }
+
+    .header__main {
+        margin-left: 60px;
+    }
+
+    .header__contacts  {
+        width: 400px;
+    }
+
+    .header__btn {
+        margin-left: 60px;
+        font-size: 22px;
+    }
+
+    .header__number {
+        line-height: normal;
+        font-size: 22px;
+    }
+
+    .header__tg {
+        width: 26px;
+        height: 24px;
+    }
+
+    .header__viber {
+        width: 26px;
+        height: 25px;
+    }
+
+    .header__whatsapp {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .logo-first {
+        width: 65px;
+        height: 54px;
+    }
+
+    .logo-second {
+        height: 44px;
+        width: 125px;
+    }
+
+    .second__about {
+        width: 250px;
+        font-size: 18px;
+    }
+
+    .header__main {
+        margin-left: 100px;
+    }
+
+    .header__contacts  {
+        width: 500px;
+    }
+
+    .header__btn {
+        margin-left: 80px;
+        font-size: 26px;
+    }
+
+    .header__number {
+        line-height: normal;
+        font-size: 26px;
+    }
+
+    .header__tg {
+        width: 31px;
+        height: 29px;
+    }
+
+    .header__viber {
+        width: 31px;
+        height: 30px;
+    }
+
+    .header__whatsapp {
+        width: 31px;
+        height: 31px;
+    }
+}
+

@@ -1,0 +1,268 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #0E1014;
+    font-family: 'Inter', sans-serif;
+    color: #E4E5EA;
+}
+
+.app {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 46px 0 20px 0;
+    margin: 0 150px 0 150px;
+    flex-direction: column;
+}
+
+.purple-light {
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    top: -154px;
+    left: 42%;
+
+    background: #833AB4;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.red-light {
+    position: absolute;
+    width: 311px;
+    height: 311px;
+    left: -102px;
+    top: 251px;
+
+    background: #961A1A;
+    opacity: 0.5;
+    filter: blur(196px);
+}
+
+.yellow-light {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -66px;
+    top: 519px;
+
+    background: #FCB045;
+    opacity: 0.4;
+    filter: blur(196px);
+}
+
+.purple-ball {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 868px;
+    border-radius: 50%;
+    top: 2px;
+
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+    filter: blur(5px);
+    backdrop-filter: blur(2px);
+}
+
+.red-ball {
+    border-radius: 50%;
+    position: absolute;
+    width: 83px;
+    height: 83px;
+    left: 519px;
+    top: 83px;
+
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    backdrop-filter: blur(2px);
+}
+
+.small-red-ball {
+    border-radius: 50%;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 851px;
+    top: 547px;
+
+    background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+    filter: blur(2.5px);
+    backdrop-filter: blur(2px);
+}
+
+/* Медия запросы для Шариков */
+@media (max-width: 700px){
+    .app {
+        height: auto;
+        justify-content: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .yellow-light {
+        display: block;
+    }
+
+    .purple-light {
+        width: 220px;
+        height: 259px;
+        left: auto;
+        top: 107px;
+    }
+
+    .red-light {
+        width: 211px;
+        height: 210px;
+        left: -55px;
+        top: 241px;
+    }
+
+    .red-ball {
+        z-index: -1;
+        width: 43px;
+        height: 43px;
+        left: 29px;
+        top: 450px;
+    }
+
+    .purple-ball {
+        z-index: -1;
+        width: 40px;
+        height: 40px;
+        left: 275px;
+        top: 286px;
+    }
+
+    .small-red-ball {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+    .app {
+        padding: 20px 0 10px 0;
+        margin: 0 30px 0 30px;
+    }
+
+    .purple-ball {
+        left: 483px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .red-ball {
+        top: 55px;
+        left: 267px;
+        width: 63px;
+        height: 63px;
+    }
+
+    .small-red-ball {
+        left: 443px;
+        top: 497px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .app {
+        margin: 0 70px 0 70px;
+    }
+
+    .purple-ball {
+        left: 645px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .red-ball {
+        left: 375px;
+        width: 73px;
+        height: 73px;
+    }
+
+    .small-red-ball {
+        left: 635px;
+        width: 23px;
+        height: 23px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .app {
+        margin: 0 100px 0 100px;
+    }
+
+    .purple-ball {
+        left: 740px;
+    }
+
+    .red-ball {
+        left: 424px;
+    }
+
+    .small-red-ball {
+        left: 730px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .purple-ball {
+        left: 970px
+    }
+
+    .red-ball {
+        left: 587px;
+    }
+
+    .small-red-ball {
+        left: 960px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .purple-ball {
+        width: 70px;
+        height: 70px;
+        left: 1230px
+    }
+
+    .red-ball {
+        width: 106px;
+        height: 106px;
+        top: 88px;
+        left: 716px;
+    }
+
+    .small-red-ball {
+        width: 38px;
+        height: 38px;
+        left: 1220px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .purple-ball {
+        left: 1435px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .red-ball {
+        top: 100px;
+        left: 866px;
+        width: 116px;
+        height: 116px;
+    }
+
+    .small-red-ball {
+        width: 48px;
+        height: 48px;
+        left: 1425px;
+    }
+}

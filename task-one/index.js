@@ -48,7 +48,7 @@ inputEl.addEventListener('input', (e) => {
 
 buttonEl.addEventListener('click', () => {
   if (!value) {
-    timerEl.textContent = 'Введите время';
+    timerEl.textContent = 'Введите время числами';
 
     return;
   }
